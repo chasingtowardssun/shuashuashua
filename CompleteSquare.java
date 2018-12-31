@@ -4,7 +4,6 @@ public class completeSquare{
         public static List<List<Integer>> getCompleteSquares(int[] nums) {
                 List<List<Integer>> res = new ArrayList<>();
                 if(nums == null || nums.length < 3) return res;
-. check 1point3acres for more.
                 Arrays.sort(nums);
                 //[1,2,3,4,5,6,7,8,9,10];
                 //a^ + b^ = c^-baidu 1point3acres
