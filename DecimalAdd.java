@@ -26,14 +26,16 @@ public static String add(String a,String b) {
                                 sb.append(carry%10);
                                 carry/=10;
                         }
-            astart--;
-            bstart--;
+                        astart--;
+                        bstart--;
                 }
                 return sb.reverse().toString();
         }
 -------------------
   
-public String add(String a,String b) {    int ia=a.length()-1;    int ib=b.length()-1;
+public String add(String a,String b) {    
+    int ia=a.length()-1;   
+    int ib=b.length()-1;
     int carry=0;
     StringBuilder sb=new StringBuilder();
     while(ia>=0||ib>=0||carry!=0) {
