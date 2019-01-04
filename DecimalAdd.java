@@ -31,3 +31,20 @@ public static String add(String a,String b) {
                 }
                 return sb.reverse().toString();
         }
+-------------------
+  
+public String add(String a,String b) {    int ia=a.length()-1;    int ib=b.length()-1;
+    int carry=0;
+    StringBuilder sb=new StringBuilder();
+    while(ia>=0||ib>=0||carry!=0) {
+         if(ia>=0) {
+              carry+=a.charAt(ia--)-'0';
+        }
+         if(ib>=0) {
+              carry+=b.charAt(ib--)-'0';
+        }   
+        sb.insert(0,carry%10);
+        carry/=10;
+    }
+    return sb.toSrtring();
+}
